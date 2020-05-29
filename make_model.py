@@ -1,14 +1,15 @@
 
 #for loading the model
 import pickle
+import os
 
 modelStructure = {}
 code = []
 
-modeldata = "/home/aakkat/jenkinsDownload/model.data"
+os.chdir('/home/aakkat/jenkinsDownload')
 
 #loading the model
-with open(modeldata,'rb') as f:
+with open('model.data','rb') as f:
 	modelStructure = pickle.load(f)
 
 #printing the model, you can check console in jenkins
