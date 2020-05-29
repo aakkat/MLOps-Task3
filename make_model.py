@@ -5,8 +5,10 @@ import pickle
 modelStructure = {}
 code = []
 
+modeldata = "/home/aakkat/jenkinsDownload/model.data"
+
 #loading the model
-with open('model.data','rb') as f:
+with open(modeldata,'rb') as f:
 	modelStructure = pickle.load(f)
 
 #printing the model, you can check console in jenkins
