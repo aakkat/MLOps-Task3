@@ -8,6 +8,8 @@ accuracy = None
 #no of different models tried 
 var = 0
 
+os.chdir('/home/aakkat/jenkinsDownload')
+
 #reading the accuracy of the last model from history file
 with open('result','r') as f:
 	accuracy = float(f.read())
